@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.전체 {
+    position: relative;
+    border: 5px solid #7286D3;
+    width: 1400px;
+    margin: 30px auto 0;
+    /* 상 좌우 하 */
+    height: 950px;}
+    
+
+.배너 {
+    border: 5px solid #8EA7E9;
+    width: 600px;
+    position: absolute;
+    left: 400px;
+    bottom: 0px;
+}
+
+.배너 img {
+    width: 100%;
+}
