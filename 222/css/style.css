@@ -62,3 +62,71 @@ a{text-decoration: none; /* 밑줄빼기 */
 #header .nav ul li .submenu li a:hover{
     background-color: #666;
 }
+
+/* banner */
+#banner{
+    overflow: hidden;
+}
+#banner .slideList{
+    width: 3000px;
+    position: relative;
+}
+#banner .slideList .slideImg{
+    position: relative;
+    float: left;
+    width: 1000px;
+}
+#banner .slideList .slideImg h2{
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px 30px;
+    border-radius: 20px;
+    color: #fff;
+}
+#banner .slideList .slideImg img{
+    width: 100%;
+    /* img태그 아래쪽에 빈틈이 처리
+    원인:img태그가 인라인 요소이기 때문 */
+    display: block;
+}
+
+/* content */
+#content1{margin-top: 20px;}
+#content1 .left{float: left;
+width: 49%;
+background-color: #f2f2f2;
+background-image: url(../img/bg1.jpg);
+background-repeat: no-repeat;
+background-size: 80px;
+/* background-position: x값 y값; */
+background-position: right 20px center;
+
+/* background: color image repeat position/size; */
+background: #f2f2f2 url(../img/bg1.jpg) no-repeat right 20px center/80px;
+padding: 20px;
+box-sizing: border-box;
+}
+#content1 .title{
+    font-size: 22px;
+    padding-bottom: 5px;
+}
+#content1 .desc{
+    font-size: 14px;
+    color: #666;
+    padding-bottom: 15px;
+}
+#content1 .left .btn{}
+
+#content1 .right{float: right;
+width: 49%;
+/* background: color image repeat position/size; */
+background: #f2f2f2 url(../img/bg2.jpg) no-repeat right 20px center/80px;
+padding: 20px;
+box-sizing: border-box;
+}
+#content1 .right .title{}
+#content1 .right .desc{}
+#content1 .right .btn{}
+#content1 .right .btn em{}
