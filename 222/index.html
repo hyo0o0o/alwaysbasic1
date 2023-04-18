@@ -107,8 +107,75 @@
             </article><!--// right -->
 
         </section><!--// content1 -->
+        <section id="content2">
+            <div class="tab_manu">
+                <div class="tab_btn">
+                    <ul class="clearfix">
+                        <li class="active"><a href="#">실시간 베스트</a></li>
+                        <li><a href="#">생생한 리뷰</a></li>
+                    </ul>
+                </div><!--// tab_btn -->
+                
+                <div class="tab_cont">
+                    <div class="best">
+                        <figure>
+                        <img src="img/banner1.jpeg" alt="부채살찹스테이크">
+                        <figcaption>부채살 찹스테이크</figcaption>
+                    </figure> 
+                    <figure>
+                        <img src="img/banner2.jpg" alt="우삼겹샤브샤브">
+                        <figcaption>우삼겹 샤브샤브</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/banner3.jpg" alt="스페인식감바스">
+                        <figcaption>스페인식 감바스</figcaption>
+                    </figure>
+                </div><!--// best -->
+                       <div class="view">
+                        <figure>
+                            <img src="img/banner4.jpg" alt="탱글탱글불쭈꾸미볶음">
+                            <figcaption>불쭈꾸미 볶음</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/banner5.jpg" alt="평양식어복쟁반">
+                            <figcaption>평양식 어복쟁반</figcaption>
+                        </figure><figure>
+                            <img src="img/banner6.jpeg" alt="토마토비프스튜">
+                            <figcaption>토마토 비프 스튜</figcaption>
+                        </figure>
+
+                       </div><!--// view -->
+                </div><!--// tab_cont -->
+            </div><!--// tab_manu -->
+        </section><!--// content2 -->
+        <footer id="footer">
+            <h2><img src="img/flogo.jpg" alt="cookit"></h2>
+            <div class="foot">
+                <ul>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">법적고지</a></li>
+                    <li><a href="#">사업자 정보확인</a></li>
+                </ul>
+                <address>
+                    씨제이제일제당주(주) 대표자:신현재<br>
+                    주소 : 서울시 강남구 서초대로 77길 13
+                    사업자등록번호 : 100-38-30489<br>
+                    통신판매업신고 중구 88903호 개인정보취급방침
+                </address>
+            </div><!-- // foot -->
+        </footer>
 
     </div> <!-- //warp -->
+
+    <!-- layer팝업 -->
+
+    <div class="layer-bg">
+        <div class="layer">
+            <h2>제목</h2>
+            <a href="#" class="close">닫기</a>
+        </div>
+    </div> <!-- // layer팝업 -->
     
 
 
@@ -143,7 +210,7 @@
                 console.log(currnetIndex)
 
                 var slidePosition=currnetIndex*(-1000)+"px";
-                console.log(slidePosition)
+                // console.log(slidePosition)
 
                 //$('.slideList').animate({실행문},시간)
                 $('.slideList').animate({
@@ -152,6 +219,29 @@
 
 
         }, 3000)
-    </script>
+
+        // tab메뉴
+        var tabBtn=$('.tab_btn ul li');
+        var tabCont=$('.tab_cont>div');
+        tabCont.hide().eq(0).show();
+
+        // hide() --> display: none;
+        // show() --> display:block;
+        // .eq() --> equivalent(동등)같다라고 생각하면 됨
+       // 태그들이 태생적으로 가지고 태어나는 번호 
+        // 같은 부모 밑에 자식은 0번부터 번호를 가짐
+        // tabBtn.click(할일); //클릭하면 할일
+        // tabBtn.click(function(){});
+
+        tabBtn.click(function(){
+            var index=$(this).index();
+            console.log(index)
+            tabCont.hide();
+            tabCont.eq(index).show();
+            tabBtn.removeClass('active');
+            $(this).addClass('active');
+        });
+
+</script>
 </body>
 </html>
