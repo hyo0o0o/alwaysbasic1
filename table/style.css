@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+*{margin: 0; padding: 0;}
+
+.wrap{width: 900px; margin: 0 auto;}
+.wrap>div{margin-top: 50px;
+border-top: 1px solid #ccc;}
+
+.wrap>div h2{text-align: center;
+margin: 10px 0;
+}
+
+.table1{}
+.table1 table{border: 1px solid #ccc;
+text-align: center;
+width: 100%;}
+.table1 table tr{}
+.table1 table tr th{border: 1px solid #ccc;}
+.table1 table tr td{border: 1px solid #ccc;}
+
+.table1-2{}
+.table1-2 table{width: 100%;
+    border: 1px solid #ccc;
+text-align: center;}
+.table1-2 table tr{}
+.table1-2 table tr th{border: 1px solid #ccc;}
+.table1-2 table tr td{border: 1px solid #ccc;}
+
+.table2{}
+.table2 table{width: 100%;}
+.table2 table,
+.table2 table tr th,
+.table2 table tr td{
+    border: 1px solid #ccc;
+    border-collapse: collapse; /* table 열사이의 공간 없애기 */
+    padding: 15px;
+    text-align: center;
+    background-color: #83FFE1;
+}
+.table2 table tr:nth-child(1){border-bottom: 3px double #000;}
+.table2 table tr:nth-child(2){height: 100px;}
+
+.table2 table tr th:nth-child(1){width: 20%;}
+.table2 table tr th:nth-child(2){width: 60%;}
+.table2 table tr th:nth-child(3){width: 20%;}
+
+.table3 table,
+.table3 table tr th,
+.table3 table tr td{
+        border-collapse: collapse; /* table 열사이의 공간 없애기 */
+    padding: 15px;
+    text-align: center;
+    }
+.table3 table{width: 100%;
+    border: 1px solid #ccc;
+text-align: center;}
+.table3 table tr{}
+.table3 table tr th{border: 1px solid #ccc;}
+.table3 table tr td{border: 1px solid #ccc;}
+
+.table4 table{width: 100%;}
+.table4 table,
+.table4 table tr th,
+.table4 table tr td{
+    border: 1px solid #ccc;
+    border-collapse: collapse; /* table 열사이의 공간 없애기 */
+    padding: 15px;
+    text-align: center;
+    background-color: #7045FF;
+}
+
+.table5 table{width: 100%;}
+.table5 table,
+.table5 table tr th,
+.table5 table tr td{
+    border: 1px solid #ccc;
+    border-collapse: collapse; /* table 열사이의 공간 없애기 */
+    padding: 15px;
+    text-align: center;
+    background-color: #C768FF;
+}
+
+.table6 table{width: 100%;}
+.table6 table,
+.table6 table tr th,
+.table6 table tr td{
+    border: 1px solid #ccc;
+    border-collapse: collapse; /* table 열사이의 공간 없애기 */
+    padding: 15px;
+    text-align: center;
+    background-color: #FFADED;
+}
+
+.table7 table{width: 100%;}
+.table7 table,
+.table7 table tr th,
+.table7 table tr td{
+    border: 1px solid #ccc;
+    border-collapse: collapse; /* table 열사이의 공간 없애기 */
+    padding: 15px;
+    text-align: center;
+}   
+/* .table7 table tr:nth-child(even){
+    background-color: rgba(56, 196, 247, 0.592)
+} */
+
+.table7 table tr:nth-child(2n){
+    background-color: rgba(56, 196, 247, 0.592)
+}
+
+/* .table7 table tr:nth-child(odd){
+    background-color: rgba(81, 208, 255, 0.389)
+} */
+
+.table7 table tr:nth-child(2n+1){
+    background-color: rgba(81, 208, 255, 0.389)
+}
+
+.table7 table tr td{}
